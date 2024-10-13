@@ -49,7 +49,14 @@ export const routes: Routes = [
   {
     path: 'teacher-list',
     loadComponent: () =>
-      import('./pages/home/components/teacher-list/teacher-list.component').then((m) => m.TeacherListComponent),
+      import('./pages/home/teacher/teacher-list/teacher-list.component').then((m) => m.TeacherListComponent),
+    title: 'Our-Teachers',
+  },
+
+  {
+    path: 'create-course',
+    loadComponent: () =>
+      import('./pages/home/teacher/create-course/create-course.component').then((m) => m.CreateCourseComponent),
     title: 'Our-Teachers',
   },
 
@@ -58,7 +65,7 @@ export const routes: Routes = [
   {
     path: 'tutor-profile',
     loadComponent: () =>
-      import('./pages/home/TutorProfile/tutor-profile/tutor-profile.component').then((m) => m.TutorProfileComponent),
+      import('./pages/home/teacher/tutor-profile/tutor-profile.component').then((m) => m.TutorProfileComponent),
     title: 'Tutor-Profile',
   },
 
@@ -74,7 +81,7 @@ export const routes: Routes = [
   {
     path: 'tutorprofile-edit',
     loadComponent: () =>
-      import('./pages/home/Login/tutorprofile-edit/tutorprofile-edit.component').then((m) => m.TutorProfileEditComponent),
+      import('./pages/home/teacher/tutorprofile-edit/tutorprofile-edit.component').then((m) => m.TutorProfileEditComponent),
     title: 'TutorProfileedit',
   },
 
@@ -88,7 +95,7 @@ export const routes: Routes = [
   {
     path: 'tutor-page',
     loadComponent: () =>
-      import('./pages/home/components/tutor-page/tutor-page.component').then((m) => m.TutorPageComponent),
+      import('./pages/home/teacher/tutor-page/tutor-page.component').then((m) => m.TutorPageComponent),
     title: 'Tutor',
   },
 
